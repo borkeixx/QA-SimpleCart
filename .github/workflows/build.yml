@@ -7,9 +7,7 @@ on:
     branches:
       - dev-test
 jobs:
-  pr-only:
-    if: github.event_name == 'pull_request'
-    name: Build for PR only
+    build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
